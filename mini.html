@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width,
+initial-scale=1.0" />
+<title>Book Store</title>
+<link rel="stylesheet" href="style.css" />
+<link
+href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Po
+ppins:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+<section id="banner">
+<img src="img/logo.png" class="logo" />
+<div class="banner-text">
+<H1>Book Hub</H1>
+<p>The largest collection of Books you can found on the
+Internet.</p>
+<p>quality Books at Reasonable Price</p>
+<div class="btn">
+<button>Login </button>
+<button>Sign Up</button>
+</div>
+</div>
+</section>
+<div id="sidenav">
+<nav><ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">Features</a></li>
+<li><a href="#">Services</a></li>
+<li><a href="#">Reviews</a></li>
+</ul></nav>
+</div>
+<div id="menubtn">
+<img src="img/menu.png" id="menu">
+</div>
+<!--Features-->
+<section id="Feature">
+<div class="title-text">
+<p>FEATURES</p>
+<h1>Why choose us</h1>
+</div>
+</section>
+<script>
+var menubtn = document.getElementById("menubtn")
+var sidenav = document.getElementById("sidenav")
+var menu = document.getElementById("menu")
+sidenav.style.right = "-250px";
+menubtn.onclick = function ()
+{
+if(sidenav.style.right == "-250px"){
+sidenav.style.right = "0";
+menu.src = "images/close.png";
+}
+else{
+sidenav.style.right = "-250px";
+menu.src = "images/menu.png";
+}
+}
+</script>
+</body>
+</html>
